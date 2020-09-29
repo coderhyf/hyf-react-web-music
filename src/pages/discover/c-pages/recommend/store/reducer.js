@@ -8,7 +8,7 @@ function reducer(state = defaultState, action) {
     case actionTypes.CHANGE_TOP_BNNAER:
       return { ...state, topBanners: [] }
     default:
-      return state
+      return state;
   }
 } 
 export default reducer;
