@@ -22,7 +22,7 @@ export default memo(function YFTopBanner() {
 
   const dispatch = useDispatch();
   const bannerRef = useRef();
-  //  发送网络请求
+  //  发送网络请求 
   useEffect(() => {
     dispatch(getTopBannersAction())
   }, [dispatch])
@@ -37,7 +37,7 @@ export default memo(function YFTopBanner() {
         <BannerLeft>
           <Carousel effect="fade" autoplay ref={bannerRef} beforeChange={beforeChange}>
             {
-              topBanners.map((item, index) => {
+              topBanners.map(item => {
                 return (
                   <div className="banner-item" key={item.imageUrl}>
                     <img src={item.imageUrl} alt={item.typeTitle} />
