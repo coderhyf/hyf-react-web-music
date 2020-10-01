@@ -1,10 +1,27 @@
 import React, { memo } from 'react';
 import YFTopBanner from './c-cpns/top-banner';
+import YFNewAlbum from './c-cpns/new-album';
+import YFRecommendRanking from './c-cpns/recommend-ranking';
+import YFHotRecommed from '../recommend/c-cpns/hot-recommend';
+import {
+  RecommendWraper,
+  Content,
+  RecommendLeft,
+  RecommendRight
+} from './styel';
 function YFRecommend() {
   return (
-    <div>
+    <RecommendWraper>
       <YFTopBanner />
-    </div>
+      <Content className="wrap-v2">
+        <RecommendLeft>
+          <YFHotRecommed />
+          <YFNewAlbum />
+          <YFRecommendRanking />
+        </RecommendLeft>
+        <RecommendRight></RecommendRight>
+      </Content>
+    </RecommendWraper>
   )
 }
 

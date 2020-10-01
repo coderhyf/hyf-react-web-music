@@ -28,7 +28,7 @@ export default memo(function YFTopBanner() {
   }, [dispatch])
   const beforeChange = useCallback((fom, to) => {
     setCurrentIndex(to);
-  },[])
+  }, [])
   // 其他业务逻辑
   const bgImage = topBanners[currentIndex] && (topBanners[currentIndex].imageUrl + "?imageView&blur=40x20");
   return (
