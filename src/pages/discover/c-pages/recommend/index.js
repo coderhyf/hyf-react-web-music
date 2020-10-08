@@ -2,7 +2,9 @@ import React, { memo } from 'react';
 import YFTopBanner from './c-cpns/top-banner';
 import YFNewAlbum from './c-cpns/new-album';
 import YFRecommendRanking from './c-cpns/recommend-ranking';
-import YFHotRecommed from '../recommend/c-cpns/hot-recommend';
+import YFHotRecommed from './c-cpns/hot-recommend';
+import YFHotAnchor from './c-cpns/hot-anchor';
+import YFSettlrSinger from './c-cpns/settlr-singer';
 import {
   RecommendWraper,
   Content,
@@ -19,7 +21,11 @@ function YFRecommend() {
           <YFNewAlbum />
           <YFRecommendRanking />
         </RecommendLeft>
-        <RecommendRight></RecommendRight>
+        <RecommendRight>
+          <YFSettlrSinger />
+          <YFHotAnchor />
+
+        </RecommendRight>
       </Content>
     </RecommendWraper>
   )
