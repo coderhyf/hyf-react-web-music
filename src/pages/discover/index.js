@@ -10,6 +10,7 @@ import {
   TopMenu
 } from './style';
 export default memo(function YFDiscover(props) {
+console.log(props);
 
   const { route } = props
   return (
