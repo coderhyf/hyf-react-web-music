@@ -114,7 +114,7 @@
 clone项目：
 
 ```
-git clone https://github.com/Haoyuanfeng/hyf-react-web-music.git
+https://github.com/coderhyf/hyf-react-web-music
 ```
 
 安装项目依赖：
